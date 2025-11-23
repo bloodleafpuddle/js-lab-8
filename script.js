@@ -49,3 +49,18 @@ const mergedCourses = [...student.courses, ...extraCourses];
 console.log("Merged Courses:", mergedCourses);
 
 //pt5
+
+student.addCourse = function(newCourse) {
+    this.courses.push(newCourse);
+};
+
+student.totalCourses = function() {
+    return this.courses.length;
+};
+
+student.addCourse("WRIT 120");
+console.log("Courses After Adding:", student.courses);
+
+console.log("Total Courses:", student.totalCourses());
+
+//bonus
