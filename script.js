@@ -37,4 +37,15 @@ console.log("Second Score:", secondScore);
 
 //pt4
 
+const studentClone = {
+    ...student,
+    graduationYear: 2027
+};
+console.log("Cloned Myself:", studentClone);
+
+const extraCourses = ["Operating Systems", "Databases"];
+const mergedCourses = [...student.courses, ...extraCourses];
+
+console.log("Merged Courses:", mergedCourses);
+
 //pt5
