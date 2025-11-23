@@ -64,3 +64,8 @@ console.log("Courses After Adding:", student.courses);
 console.log("Total Courses:", student.totalCourses());
 
 //bonus
+
+const totalScore = scores.reduce((sum, next) => sum + next, 0);
+const averageScore = totalScore / scores.length;
+
+console.log("Average Score:", averageScore);
